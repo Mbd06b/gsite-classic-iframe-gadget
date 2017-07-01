@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Include gadget (iframe)" title_url="http://sites.google.com/"
+          description="Include another web page in your Google Site"
+          thumbnail="http://www.gstatic.com/sites-gadgets/common/images/sites-icon-gadget-thumb.png"
+          screenshot="http://www.gstatic.com/sites-gadgets/common/images/sites-icon-gadget-ss.png"
+          height="800" width="600" author="Google">
+    <Require feature="dynamic-height"/>
+  </ModulePrefs>
+  <UserPref name="iframeURL" display_name="URL to content" required="true"/>
+  <UserPref name="scroll" display_name="Display scrollbar" default_value="auto" datatype="enum">
+    <EnumValue value="auto" display_value="Automatic"/>
+    <EnumValue value="no" display_value="No"/>
+    <EnumValue value="yes" display_value="Yes"/>
+  </UserPref>
+  <Content type="html" view="default,canvas">
+
+  <![CDATA[
+  <div id='dest'><img src="https://www.google.com/ig/images/spinner.gif"></img></div>
+  <script src="https://MatthewBDowell.bitbucket.io/Gadgets/iframe.js" type="text/javascript"></script>
+  ]]>
+ 
+  </Content>
+</Module>
